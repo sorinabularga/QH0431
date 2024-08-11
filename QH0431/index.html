@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="logo.webp" alt="Livemuse Logo">
+        </a>
+        <button id="loginButton" class="login-button">Login</button>
+        <img src="pic1.jpg" alt="Music Event" class="background-image">
+        <div class="content">
+            <h1>Join us on June 20th, 2024 for an unforgettable music experience!</h1>
+            <button id="joinButton">Join Us</button>
+        </div>
+    </div>
+    <div class="next-section">
+        <div class="artists">
+            <img src="colaj.jpg" alt="Artists">
+            <div class="artists-text">
+                <h2>Artists</h2>
+                <p>Look out for guest DJs spinning vintage bossa nova and deep house, party games. We are expecting artists such as Fisher, Eric Prydz, Michael Bibi, Peggy Gou, and BLASTERJAXX</p>
+            </div>
+        </div>
+        <div class="stages">
+            <div class="stages-text">
+                <h2>Stages</h2>
+                <p>Join LiveMus Festival 2024 for an electrifying experience! Dance from sunset to dawn with Fisher, Eric Prydz, Michael Bibi, Peggy Gou, and BLASTERJAXX. Non-stop music, vibrant vibes, unforgettable moments! Don't miss the fun!</p>
+            </div>
+            <img src="festival.jpg" alt="Stages">
+        </div>
+    </div>
+    <div class="faq-section">
+        <img src="faq.jpg" alt="FAQ" class="faq-image">
+        <div class="faq-content">
+            <p>Got a question? Drop it in the form, and we'll hit you back with an answer ASAP.</p>
+            <button id="faqButton">FAQ</button>
+        </div>
+    </div>
+    <div class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Contact Us</h2>
+                <p>customerservice@livemus.co.uk<br>+44 07879056739</p>
+            </div>
+            <div class="mission-text">
+                <h2>Our Mission</h2>
+                <p>At LiveMus Festival, our mission is to create a vibrant, inclusive, and unforgettable experience where music lovers from all walks of life come together to celebrate the magic of live music. We strive to foster a sense of community, joy, and connection, making every moment at our festival a cherished memory.</p>
+            </div>
+            <div class="vision-text">
+                <h2>The Vision</h2>
+                <p>LiveMus Festival envisions a world where music transcends boundaries, unites people, and ignites passion. Our goal is to become a global beacon of musical innovation and creativity, setting the standard for immersive and exhilarating festival experiences. We aim to inspire and empower artists and audiences alike, leaving a lasting impact on the world of music.</p>
+            </div>
+            <div class="wizards-text">
+                <h2>The Festival Wizards</h2>
+                <p>Behind the scenes of LiveMus Festival are our Festival Wizards – a dedicated team of visionaries, creators, and music enthusiasts. These passionate individuals work tirelessly to craft an extraordinary event, ensuring every detail is perfect. From curating diverse and electrifying lineups to designing awe-inspiring stages, the Festival Wizards bring their magic to life, making LiveMus Festival a truly enchanting experience.</p>
+            </div>
+            <div class="social-media">
+                <p>Follow us on social media:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="TikTok.png" alt="TikTok"></a>
+                    <a href="#"><img src="YouTube.png" alt="YouTube"></a>
+                    <a href="#"><img src="Facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="telegram.svg" alt="Telegram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Welcome to LiveMus</h2>
+            <form>
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" name="email" required>
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit">Sign in</button>
+                <div class="links">
+                    <a href="#">Forgot Password?</a>
+                    <a href="#">Create account</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Join Us Modal -->
+    <div id="joinUsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Join Us</h2>
+            <form id="joinUsForm">
+                <label for="joinFirstName">First Name</label>
+                <input type="text" id="joinFirstName" name="firstName" required>
+                <label for="joinLastName">Last Name</label>
+                <input type="text" id="joinLastName" name="lastName" required>
+                <label for="joinEmail">Email</label>
+                <input type="email" id="joinEmail" name="email" required>
+                <label>Will you be attending? <span class="required">(required)</span></label>
+                <div class="options">
+                    <label class="option" for="joinYes">
+                        <input type="radio" id="joinYes" name="attendance" value="yes" required> 
+                        Yes
+                    </label>
+                    <label class="option" for="joinNo">
+                        <input type="radio" id="joinNo" name="attendance" value="no"> 
+                        No
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FAQ Modal -->
+    <div id="faqModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>FAQ</h2>
+            <form id="faqForm">
+                <label for="faqFirstName">First Name</label>
+                <input type="text" id="faqFirstName" name="firstNameFaq" required>
+                <label for="faqLastName">Last Name</label>
+                <input type="text" id="faqLastName" name="lastNameFaq" required>
+                <label for="faqQuestion">Please type your question below.</label>
+                <input type="text" id="faqQuestion" name="question" required>
+                <label>Will you be attending? <span class="required">(required)</span></label>
+                <div class="options">
+                    <label class="option" for="faqYes">
+                        <input type="radio" id="faqYes" name="attendance" value="yes" required> 
+                        Yes
+                    </label>
+                    <label class="option" for="faqNo">
+                        <input type="radio" id="faqNo" name="attendance" value="no"> 
+                        No
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
